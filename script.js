@@ -1,6 +1,7 @@
 console.log('connected')
+let main = document.querySelector(".widget") 
 
-const mainData = {
+const widgetsData = {
     "user": {
         "session": "v2_d1153892453ddba25274cc2dea5c2191_14A7B4BB0B5B63781A90BE1B0F5B6019_1636059098_1636059098_CNawjgYQj8BGGNmplN33-sODFyABKAMw4QE4kaQOQPPCDkjnqtsDUIwEWABgoB9okN3uttfUr6LTAXAB"
     },
@@ -146,3 +147,35 @@ const mainData = {
     ]
 }
     
+const fakeData = [{name: "mark"}, {name:"bill"}]
+const widgetElements = widgetsData.placements.pop().list
+console.log(widgetElements)
+
+widgetElements.forEach(element => {
+    console.log(element)
+    renderWidgetElement(element)
+})
+
+
+function renderWidgetElement(element){
+    
+    console.log(element)
+
+    let elementDiv = document.createElement("div")
+    elementDiv.className = "widget-element-div"
+
+    let elementImg = document.createElement("img")
+    elementImg.className = "element-img"
+    const photoUrl = element.thumbnail.pop().url
+    elementImg.src = photoUrl
+
+    let elementTitleH2 = document.createElement("h2")
+    elementTitleH2.innerText = element.name
+
+    let branding = document.createElement("p")
+    branding.innerText = element.branding
+
+    elementDiv.append(elementImg, elementTitleH2, branding)
+  
+    main.append(elementDiv)
+}

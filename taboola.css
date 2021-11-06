@@ -1,3 +1,100 @@
+.parent-div {
+  width: 350px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+header {
+  width: 320px;
+  margin: auto;
+}
+
 h1 {
-  color: red;
+  color: black;
+  font-size: 12pt;
+}
+
+main {
+  width: 350px;
+  padding-top: 5px;
+  margin: auto;
+}
+
+img {
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border: 0.5px inset rgb(190, 187, 187);
+}
+
+h2 {
+  max-width: 320px;
+  font-size: 12pt;
+  padding: 0 0 0 15.5px;
+  line-height: 13pt;
+}
+
+p {
+  font-size: 10pt;
+  color: rgb(90, 88, 88);
+  padding-left: 15.5px;
+}
+
+@media screen and (min-width: 700px) {
+  .parent-div {
+    width: 98%;
+    height: 57vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    background-color: rgb(233, 233, 236);
+  }
+
+  header {
+    width: 700px;
+    margin: auto;
+  }
+
+  h1 {
+    color: black;
+    font-size: 11pt;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.2rem;
+    width: 98%;
+    height: 100%;
+    padding-top: 1px;
+  }
+
+  .widget-element-div {
+    padding-top: 10px;
+    border: 2px solid white;
+  }
+
+  img {
+    max-width: 210px;
+    width: 100%;
+    border: 0.5px inset rgb(190, 187, 187);
+  }
+
+  h2 {
+    max-width: 210px;
+    font-size: 11pt;
+    padding: 0 0 0 15.5px;
+    line-height: 13pt;
+  }
+
+  p {
+    font-size: 10pt;
+    color: rgb(90, 88, 88);
+    padding-left: 15.5px;
+  }
 }
