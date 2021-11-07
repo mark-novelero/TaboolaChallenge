@@ -179,6 +179,67 @@ p {
   }
 }
 
+@media screen and (min-width: 1000px) and (min-height: 1200px) {
+  .parent-div {
+    width: 850px;
+    height: 660px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    background-color: rgb(233, 233, 236);
+  }
+
+  header {
+    width: 680px;
+    margin: auto;
+    display: flex;
+  }
+
+  h1 {
+    color: var(--header-font);
+    font-size: 11pt;
+  }
+
+  .sponsor {
+    font-size: 9pt;
+    padding-top: 1px;
+    margin-left: 68%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.2rem;
+    width: 95%;
+    height: 85%;
+    padding-top: 1px;
+  }
+
+  .widget-element-div {
+    padding-top: 10px;
+    border: 2px solid white;
+  }
+
+  img {
+    width: 93%;
+    border: 0.5px inset rgb(190, 187, 187);
+  }
+
+  h2 {
+    max-width: 210px;
+    font-size: 11pt;
+    padding: 0 0 0 13.5px;
+    line-height: 13pt;
+  }
+
+  p {
+    font-size: 10pt;
+    color: rgb(90, 88, 88);
+    padding-left: 13.5px;
+  }
+}
+
 @media screen and (min-width: 1100px) {
   .parent-div {
     width: 750px;
@@ -243,7 +304,7 @@ p {
 @media screen and (min-width: 1300px) {
   .parent-div {
     width: 870px;
-    height: 660px;
+    height: 665px;
     padding-top: 8px;
     padding-bottom: 5px;
     margin-top: 40px;
@@ -304,7 +365,7 @@ p {
 @media screen and (min-width: 1600px) {
   .parent-div {
     width: 1020px;
-    height: 762px;
+    height: 761px;
     padding-top: 8px;
     padding-bottom: 5px;
     margin-top: 40px;
@@ -335,7 +396,7 @@ p {
     grid-gap: 0.2rem;
     width: 95%;
     height: 85%;
-    padding-top: 1px;
+    padding-top: 0px;
   }
 
   .widget-element-div {
@@ -351,13 +412,76 @@ p {
   h2 {
     max-width: 280px;
     font-size: 13pt;
-    padding: 0 0 0 12px;
+    padding: 0 0 0 12.2px;
     line-height: 13pt;
   }
 
   p {
     font-size: 11pt;
     color: rgb(90, 88, 88);
-    padding-left: 12px;
+    padding-left: 12.2px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .parent-div {
+    width: 1220px;
+    height: 850.5px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 90px;
+    background-color: rgb(233, 233, 236);
+  }
+
+  header {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+  }
+
+  h1 {
+    color: var(--header-font);
+    font-size: 15pt;
+  }
+
+  .sponsor {
+    font-size: 13pt;
+    padding-top: 3px;
+    margin-left: 838px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0.2rem;
+    width: 95%;
+    height: 85%;
+    padding-top: 1px;
+  }
+
+  .widget-element-div {
+    padding-top: 15px;
+    border: 2px solid white;
+  }
+
+  img {
+    width: 96%;
+    border: 0.5px inset rgb(190, 187, 187);
+  }
+
+  h2 {
+    max-width: 310px;
+    font-size: 16pt;
+    padding: 0 0 0 18.2px;
+    margin-left: 13px;
+    line-height: 17pt;
+  }
+
+  p {
+    font-size: 11pt;
+    color: rgb(90, 88, 88);
+    padding-left: 18.2px;
+    margin-left: 13px;
   }
 }
