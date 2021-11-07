@@ -147,9 +147,8 @@ const widgetsData = {
     ]
 }
     
-const fakeData = [{name: "mark"}, {name:"bill"}]
 const widgetElements = widgetsData.placements.pop().list
-console.log(widgetElements)
+
 
 widgetElements.forEach(element => {
     console.log(element)
@@ -174,8 +173,16 @@ function renderWidgetElement(element){
 
     let branding = document.createElement("p")
     branding.innerText = element.branding
+    
+    
+    let aTag = document.createElement("a")
+    aTag.href = element.url 
+    aTag.append(elementImg, elementTitleH2, branding)
 
-    elementDiv.append(elementImg, elementTitleH2, branding)
-  
+    console.log(aTag)
+    
+    elementDiv.append(aTag)
+
     main.append(elementDiv)
+   
 }
